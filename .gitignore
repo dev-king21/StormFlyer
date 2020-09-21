@@ -4,10 +4,6 @@
 /resources/lang
 /resources/sass
 /public/hot
-/public/storage
-/public/js
-/public/css
-/public/fonts
 /storage/*.key
 /vendor
 .env.backup
