@@ -12,7 +12,7 @@
                     <div>Address: <b>{{$app->address}}</b></div>
                     <div>Postcode: <b>{{$app->post_code}}</b></div>
                     <div>Email: <b>{{$app->email}}</b></div>
-                    <div>Mobile: <b>{{$app->mobile}}</b></div>
+                    <div>Mobile: <b>{{$app->phone}}</b></div>
                     <div>D. O. B: <b>{{$app->dob}}</b></div>
                     <div>National Insurance Number: <b>{{ $app->ins_number }}</b></div>
                 </div>
