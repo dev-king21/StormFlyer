@@ -381,9 +381,14 @@ __webpack_require__.r(__webpack_exports__);
         if (key === 'start_date') formData.append('start_date', this.formatDate(this.appl.start_date));else formData.append(key, this.appl[key]);
       }
 
+      this.$vs.loading({
+        color: 'red',
+        type: 'sound'
+      });
       this.$http.post('/api/job/application', formData, headers).then(function (response) {
         var data = response.data;
-        console.log(data);
+
+        _this.$vs.loading.close();
 
         _this.$vs.notify({
           title: 'Success',
@@ -393,7 +398,9 @@ __webpack_require__.r(__webpack_exports__);
           color: 'success'
         });
       })["catch"](function (error) {
-        return console.log(error);
+        _this.$vs.loading.close();
+
+        console.log(error);
       });
     },
     changeUploadFile: function changeUploadFile(_ref) {
