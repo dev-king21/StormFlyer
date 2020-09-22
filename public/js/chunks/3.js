@@ -159,6 +159,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -185,7 +202,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".wrapper {\n  color: #151515;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n.wrapper .page-subtitle {\n  font-weight: 600;\n}\n.wrapper .page-title {\n  color: #dc0000;\n  font-weight: 600;\n}\n.wrapper .job-title {\n  font-weight: bold;\n}\n.wrapper .job-desc {\n  font-weight: bold;\n}\n@media (min-width: 576px) {\n.wrapper .page-subtitle {\n    font-size: 3.2rem;\n    line-height: 3.6rem;\n}\n[dir] .wrapper .page-subtitle {\n    margin-top: 1.6rem;\n    padding: 0 1.6rem;\n}\n.wrapper .page-title {\n    font-size: 5.6rem;\n    line-height: 6rem;\n}\n[dir] .wrapper .page-title {\n    margin: 1.2rem 0;\n    padding: 0 1.5rem;\n}\n.wrapper .job-title {\n    font-size: 2.6rem;\n}\n[dir] .wrapper .job-title {\n    padding: 1.4rem;\n}\n.wrapper .job-desc {\n    font-size: 1.8rem;\n}\n[dir] .wrapper .job-desc {\n    padding: 2rem 1.6rem;\n}\n.wrapper .apply-button {\n    font-size: 2.2rem;\n}\n[dir] .wrapper .apply-button {\n    margin: 3rem;\n}\n}\n@media (min-width: 769px) {\n.wrapper .page-subtitle {\n    font-size: 5rem;\n    line-height: 6rem;\n}\n[dir] .wrapper .page-subtitle {\n    margin-top: 3rem;\n    padding: 0 3rem;\n}\n.wrapper .page-title {\n    font-size: 6.8rem;\n    line-height: 6.8rem;\n}\n[dir] .wrapper .page-title {\n    margin: 2rem 0;\n    padding: 0 3rem;\n}\n.wrapper .job-title {\n    font-size: 3.6rem;\n}\n[dir] .wrapper .job-title {\n    padding: 2rem;\n}\n.wrapper .job-desc {\n    font-size: 2.4rem;\n}\n[dir] .wrapper .job-desc {\n    padding: 3rem 2.4rem;\n}\n.wrapper .apply-button {\n    font-size: 3rem;\n}\n[dir] .wrapper .apply-button {\n    margin: 5rem;\n}\n}\n@media (max-width: 576px) {\n.wrapper .page-subtitle {\n    font-size: 1.8rem;\n    line-height: 2.2rem;\n}\n[dir] .wrapper .page-subtitle {\n    margin-top: 1rem;\n    padding: 0 1rem;\n}\n.wrapper .page-title {\n    font-size: 2.8rem;\n    line-height: 3rem;\n}\n[dir] .wrapper .page-title {\n    margin: 0.9rem 0;\n    padding: 0 0.9rem;\n}\n.wrapper .job-title {\n    font-size: 1.8rem;\n}\n[dir] .wrapper .job-title {\n    padding: 1.2rem;\n}\n.wrapper .job-desc {\n    font-size: 1.2rem;\n}\n[dir] .wrapper .job-desc {\n    padding: 1.4rem 1rem;\n}\n.wrapper .apply-button {\n    font-size: 1.6rem;\n}\n[dir] .wrapper .apply-button {\n    margin: 1.8rem;\n}\n}\n[dir] .wrapper .apply-button {\n  border-radius: 0 !important;\n}", ""]);
+exports.push([module.i, ".wrapper {\n  color: #151515;\n  /* @media (min-width: 576px) {\n      .page-subtitle {\n          font-size: 3.2rem;\n          line-height: 3.6rem;\n          margin-top: 1.6rem;\n          padding: 0 1.6rem;\n      }\n\n      .page-title {\n          font-size: 5.6rem;\n          line-height: 6rem;\n          margin: 1.2rem 0;\n          padding: 0 1.5rem;            \n      }\n\n      .job-title {\n          font-size: 2.6rem;\n          padding: 1.4rem;\n      }\n\n      .job-desc {\n          font-size: 1.8rem;\n          padding: 2rem 1.6rem;\n      }\n\n      .apply-button {    \n          font-size: 2.2rem;\n          margin: 3rem;\n      }\n  }\n\n  @media (min-width: 769px) {\n      .page-subtitle {\n          font-size: 5rem;\n          line-height: 6rem;\n          margin-top: 3rem;\n          padding: 0 3rem;\n      }\n\n      .page-title {\n          font-size: 6.8rem;\n          line-height: 6.8rem;\n          margin: 2rem 0;\n          padding: 0 3rem;\n      }\n\n      .job-title {\n          font-size: 3.6rem;\n          padding: 2rem;\n      }\n\n      .job-desc {\n          font-size: 2.4rem;\n          padding: 3rem 2.4rem;\n      }\n\n      .apply-button {    \n          font-size: 3rem;\n          margin: 5rem;\n      }\n  }\n\n  @media (max-width: 576px) {\n      .page-subtitle {\n          font-size: 1.8rem;\n          line-height: 2.2rem;\n          margin-top: 1rem;\n          padding: 0 1rem;\n      }\n\n      .page-title {\n          font-size: 2.8rem;\n          line-height: 3rem;\n          margin: 0.9rem 0;\n          padding: 0 0.9rem;            \n      }\n\n      .job-title {\n          font-size: 1.8rem;\n          padding: 1.2rem;\n      }\n\n      .job-desc {\n          font-size: 1.2rem;\n          padding: 1.4rem 1rem;\n      }\n\n      .apply-button {    \n          font-size: 1.6rem;\n          margin: 1.8rem;\n      }\n  } */\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n.wrapper .page-subtitle {\n  font-weight: 600;\n  font-size: 4.6vw;\n  line-height: 5.4vw;\n}\n[dir] .wrapper .page-subtitle {\n  margin-top: 3.4vw;\n  padding: 0 3.4vw;\n}\n.wrapper .page-title {\n  color: #dc0000;\n  font-weight: 600;\n  font-size: 6vw;\n  line-height: 6vw;\n}\n[dir] .wrapper .page-title {\n  margin: 1.6vw 0;\n  padding: 0 2.4vw;\n}\n.wrapper .job-title {\n  font-weight: bold;\n  font-size: 3.4vw;\n}\n[dir] .wrapper .job-title {\n  padding: 1.8vw;\n}\n.wrapper .job-desc {\n  font-weight: bold;\n  font-size: 2vw;\n}\n[dir] .wrapper .job-desc {\n  padding: 2.6vw 2vw;\n}\n.wrapper .apply-button {\n  font-size: 2.2vw;\n}\n[dir] .wrapper .apply-button {\n  border-radius: 0 !important;\n  margin: 4.2vw;\n}", ""]);
 
 // exports
 
@@ -353,7 +370,7 @@ var staticRenderFns = [
       "div",
       { staticClass: "flex items-center justify-center w-full" },
       [
-        _c("div", { staticClass: "job-desc bg-white w-2/3" }, [
+        _c("div", { staticClass: "job-desc bg-white w-3/5" }, [
           _vm._v("\r\n                ✔ Local distribution routes"),
           _c("br"),
           _vm._v("\r\n                ✔ Totally flexible hours"),
