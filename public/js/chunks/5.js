@@ -271,33 +271,12 @@ __webpack_require__.r(__webpack_exports__);
     vSelect: vue_select__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   data: function data() {
-    return {
-      name: '',
-      company_name: '',
-      contact_number: '',
-      email: '',
-      service: 0,
-      details: '',
-      services: [{
-        id: 0,
-        name: 'paint',
-        label: 'paint'
-      }, {
-        id: 1,
-        name: 'design',
-        label: 'design'
-      }, {
-        id: 2,
-        name: 'print',
-        label: 'print'
-      }]
-    };
+    return {};
   },
   methods: {
     goPage: function goPage(page) {
       this.$router.push(page);
-    },
-    setService: function setService() {}
+    }
   }
 });
 

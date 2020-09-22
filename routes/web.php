@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/mail/test', 'JobController@mailBladeTest');
+
 Route::get('/{any}', 'ApplicationController')->where('any', '.*');

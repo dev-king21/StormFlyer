@@ -236,9 +236,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 
 
@@ -272,7 +269,7 @@ __webpack_require__.r(__webpack_exports__);
         label: 'Yes - Happy to work in a team'
       }, {
         id: 1,
-        label: 'No - Happy to work alone'
+        label: 'No - I prefer to work alone'
       }],
       drive_licence: [{
         id: 0,
@@ -300,14 +297,17 @@ __webpack_require__.r(__webpack_exports__);
         label: 'Weekeneds Only'
       }, {
         id: 1,
-        label: 'All days in a week'
+        label: 'Weekdays only'
+      }, {
+        id: 2,
+        label: 'Weekends & Weekdays'
       }],
       position: [{
         id: 0,
         label: 'Leaflet Distributor'
       }, {
         id: 1,
-        label: 'Leaflet Distributor'
+        label: 'Supervisor'
       }],
       current_postion: {},
       current_full_days: {},
@@ -320,25 +320,97 @@ __webpack_require__.r(__webpack_exports__);
       employee_type: {}
     };
   },
+  computed: {
+    document: function document() {
+      console.log(this.appl.document);
+      return this.appl.document;
+    }
+  },
   methods: {
     submitDocument: function submitDocument() {
-      this.appl.position = this.current_position.id;
-      this.appl.full_days = this.current_full_days.id === 0;
-      this.appl.full_time = this.current_full_time.id === 0;
-      this.appl.drive_licence = this.current_drive_licence.id === 0;
-      this.appl.access_car = this.current_access_car.id === 0;
-      this.appl.own_car = this.current_own_car.id === 0;
-      this.appl.team_work = this.current_team_work.id === 0;
-      this.appl.week_days = this.current_week_days;
+      var _this = this;
+
+      this.appl.position = this.current_position.label;
+      this.appl.full_days = this.current_full_days.label;
+      this.appl.full_time = this.current_full_time.label;
+      this.appl.drive_licence = this.current_drive_licence.label;
+      this.appl.access_car = this.current_access_car.label;
+      this.appl.own_car = this.current_own_car.label;
+      this.appl.team_work = this.current_team_work.label;
+      this.appl.week_days = this.current_week_days.label;
+      this.appl.employee_type = this.employee_type;
+
+      if (this.appl.first_name === '' || this.appl.last_name === '' || this.appl.address === '' || this.appl.post_code === '' || this.appl.email === '' || this.appl.phone === '' || this.appl.dob === '' || this.appl.ins_number === '' || !this.appl.start_date || this.appl.start_date === '' || !this.employee_type || this.employee_type === '') {
+        return this.$vs.notify({
+          title: 'Error',
+          text: 'You must fill out all fields in the application form',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'danger'
+        });
+      }
+
+      if (!this.appl.position || !this.appl.full_days || !this.appl.full_time || !this.appl.drive_licence || !this.appl.access_car || !this.appl.own_car || !this.appl.team_work || !this.appl.week_days) {
+        return this.$vs.notify({
+          title: 'Error',
+          text: 'You must fill out all fields in the application form',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'danger'
+        });
+      }
+
+      if (!this.appl.document) {
+        return this.$vs.notify({
+          title: 'Error',
+          text: 'You must select document file to upload.',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'danger'
+        });
+      }
+
+      var headers = {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      };
+      var formData = new FormData();
+
+      for (var key in this.appl) {
+        if (key === 'start_date') formData.append('start_date', this.formatDate(this.appl.start_date));else formData.append(key, this.appl[key]);
+      }
+
+      this.$http.post('/api/job/application', formData, headers).then(function (response) {
+        var data = response.data;
+        console.log(data);
+
+        _this.$vs.notify({
+          title: 'Success',
+          text: 'We have successfully received your Application information. <br> Please wait until we will contact to you soon.',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'success'
+        });
+      })["catch"](function (error) {
+        return console.log(error);
+      });
     },
     changeUploadFile: function changeUploadFile(_ref) {
       var action = _ref.action,
           name = _ref.name,
           file = _ref.file;
-
-      if (action === 'remove') {
-        if (name === 'building') this.building_file = null;else this.interior_file = null;
-      } else if (name === 'building') this.building_file = file;else this.interior_file = file;
+      this.appl.document = file;
+    },
+    formatDate: function formatDate(date) {
+      var d = new Date(date),
+          year = d.getFullYear();
+      var month = "".concat(d.getMonth() + 1),
+          day = "".concat(d.getDate());
+      if (month.length < 2) month = "0".concat(month);
+      if (day.length < 2) day = "0".concat(day);
+      console.log("".concat(month, "/").concat(day, "/").concat(year));
+      return "".concat(month, "/").concat(day, "/").concat(year);
     }
   },
   created: function created() {
@@ -350,6 +422,7 @@ __webpack_require__.r(__webpack_exports__);
     this.current_own_car = this.own_car[1];
     this.current_week_days = this.week_days[0];
     this.current_team_work = this.team_work[0];
+    this.employee_type = 'employed';
   },
   mounted: function mounted() {}
 });
@@ -390,7 +463,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var preloader = '/fair_image/placeholder.png';
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     onSuccess: {
@@ -404,7 +489,8 @@ var preloader = '/fair_image/placeholder.png';
   },
   data: function data() {
     return {
-      selected: false
+      selected: false,
+      document: undefined
     };
   },
   methods: {
@@ -437,7 +523,7 @@ var preloader = '/fair_image/placeholder.png';
 
       var rawFile = files[0]; // only use files[0]
 
-      if (!this.isImage(rawFile)) {
+      if (!this.isImage(rawFile) && !this.isPDF(rawFile)) {
         this.$vs.notify({
           title: 'File Format Error',
           text: 'Only supports upload .png, .gif, .jpg, .jpeg, pdf suffix files',
@@ -451,11 +537,21 @@ var preloader = '/fair_image/placeholder.png';
       this.uploadFile(rawFile);
     },
     isImage: function isImage(file) {
-      return /\.(jpeg|png|gif|jpg|pdf)$/.test(file.name);
+      return /\.(jpeg|png|gif|jpg)$/.test(file.name);
+    },
+    isPDF: function isPDF(file) {
+      return /\.(pdf)$/.test(file.name);
     },
     uploadFile: function uploadFile(file) {
       this.$refs['fileInput'].value = null; // fix can't select the same excel
-      //this.readerData(file)
+
+      this.document = file;
+      this.selected = true;
+      var sendData = {};
+      sendData.action = 'change';
+      sendData.name = this.upload_key;
+      sendData.file = file;
+      this.onSuccess(sendData); //this.readerData(file)
     },
     cancelAction: function cancelAction() {
       this.selected = false;
@@ -636,6 +732,7 @@ var render = function() {
                             }
                           ],
                           attrs: {
+                            color: "green",
                             placeholder: "First",
                             name: "FirstName",
                             "data-vv-validate-on": "blur"
@@ -670,6 +767,7 @@ var render = function() {
                             }
                           ],
                           attrs: {
+                            color: "green",
                             placeholder: "Last",
                             name: "LastName",
                             "data-vv-validate-on": "blur"
@@ -702,7 +800,11 @@ var render = function() {
                         expression: "'required'"
                       }
                     ],
-                    attrs: { name: "Address", "data-vv-validate-on": "blur" },
+                    attrs: {
+                      color: "green",
+                      name: "Address",
+                      "data-vv-validate-on": "blur"
+                    },
                     model: {
                       value: _vm.appl.address,
                       callback: function($$v) {
@@ -723,11 +825,15 @@ var render = function() {
                       {
                         name: "validate",
                         rawName: "v-validate",
-                        value: "required|digits",
-                        expression: "'required|digits'"
+                        value: "required",
+                        expression: "'required'"
                       }
                     ],
-                    attrs: { name: "PostCode", "data-vv-validate-on": "blur" },
+                    attrs: {
+                      color: "green",
+                      name: "PostCode",
+                      "data-vv-validate-on": "blur"
+                    },
                     model: {
                       value: _vm.appl.post_code,
                       callback: function($$v) {
@@ -752,7 +858,11 @@ var render = function() {
                         expression: "'required|email'"
                       }
                     ],
-                    attrs: { name: "Email", "data-vv-validate-on": "blur" },
+                    attrs: {
+                      color: "green",
+                      name: "Email",
+                      "data-vv-validate-on": "blur"
+                    },
                     model: {
                       value: _vm.appl.email,
                       callback: function($$v) {
@@ -777,7 +887,11 @@ var render = function() {
                         expression: "'required'"
                       }
                     ],
-                    attrs: { name: "Phone", "data-vv-validate-on": "blur" },
+                    attrs: {
+                      color: "green",
+                      name: "Phone",
+                      "data-vv-validate-on": "blur"
+                    },
                     model: {
                       value: _vm.appl.phone,
                       callback: function($$v) {
@@ -802,7 +916,11 @@ var render = function() {
                         expression: "'required'"
                       }
                     ],
-                    attrs: { name: "DOB", "data-vv-validate-on": "blur" },
+                    attrs: {
+                      color: "green",
+                      name: "DOB",
+                      "data-vv-validate-on": "blur"
+                    },
                     model: {
                       value: _vm.appl.dob,
                       callback: function($$v) {
@@ -828,6 +946,7 @@ var render = function() {
                       }
                     ],
                     attrs: {
+                      color: "green",
                       name: "InsuranceNumber",
                       "data-vv-validate-on": "blur"
                     },
@@ -851,7 +970,11 @@ var render = function() {
                   _vm._m(7),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.position },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.position
+                    },
                     model: {
                       value: _vm.current_position,
                       callback: function($$v) {
@@ -885,7 +1008,7 @@ var render = function() {
                           "vs-radio",
                           {
                             attrs: {
-                              color: "red",
+                              color: "green",
                               "vs-name": "employee_type",
                               "vs-value": "employed"
                             },
@@ -911,7 +1034,7 @@ var render = function() {
                           "vs-radio",
                           {
                             attrs: {
-                              color: "red",
+                              color: "green",
                               "vs-name": "employee_type",
                               "vs-value": "self-employed"
                             },
@@ -937,7 +1060,7 @@ var render = function() {
                           "vs-radio",
                           {
                             attrs: {
-                              color: "red",
+                              color: "green",
                               "vs-name": "employee_type",
                               "vs-value": "unemployed"
                             },
@@ -963,7 +1086,7 @@ var render = function() {
                           "vs-radio",
                           {
                             attrs: {
-                              color: "red",
+                              color: "green",
                               "vs-name": "employee_type",
                               "vs-value": "student"
                             },
@@ -985,7 +1108,11 @@ var render = function() {
                   _vm._m(10),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.drive_licence },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.drive_licence
+                    },
                     model: {
                       value: _vm.current_drive_licence,
                       callback: function($$v) {
@@ -998,7 +1125,11 @@ var render = function() {
                   _vm._m(11),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.access_car },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.access_car
+                    },
                     model: {
                       value: _vm.current_access_car,
                       callback: function($$v) {
@@ -1011,7 +1142,11 @@ var render = function() {
                   _vm._m(12),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.own_car },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.own_car
+                    },
                     model: {
                       value: _vm.current_own_car,
                       callback: function($$v) {
@@ -1024,7 +1159,11 @@ var render = function() {
                   _vm._m(13),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.full_time },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.full_time
+                    },
                     model: {
                       value: _vm.current_full_time,
                       callback: function($$v) {
@@ -1037,7 +1176,11 @@ var render = function() {
                   _vm._m(14),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.week_days },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.week_days
+                    },
                     model: {
                       value: _vm.current_week_days,
                       callback: function($$v) {
@@ -1050,7 +1193,11 @@ var render = function() {
                   _vm._m(15),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.team_work },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.team_work
+                    },
                     model: {
                       value: _vm.current_team_work,
                       callback: function($$v) {
@@ -1063,7 +1210,11 @@ var render = function() {
                   _vm._m(16),
                   _vm._v(" "),
                   _c("v-select", {
-                    attrs: { options: _vm.full_days },
+                    attrs: {
+                      color: "green",
+                      clearable: false,
+                      options: _vm.full_days
+                    },
                     model: {
                       value: _vm.current_full_days,
                       callback: function($$v) {
@@ -1075,44 +1226,20 @@ var render = function() {
                   _vm._v(" "),
                   _vm._m(17),
                   _vm._v(" "),
-                  _c("div", { staticClass: "hint-lb" }, [
-                    _vm._v(
-                      "\r\n                        Postra Communitaions Ltd is an offline marketing company specialisting in a variety of services for businesses. \r\n                        We specialise in door to door leaflet distribution and can offer you work if you meet the relevant criteria for individual campaigns. \r\n                        In order for us to offer you work and comply with GDPR requlations, we need your consent to hold your details on file and store your details in a computer data base. \r\n                        Your iniformation will only be stored for the purpose of offering you work and will not be passed on to any 3rd party. \r\n                        We may sometimes share your information with connected partners within our business but \r\n                        only for the purpose of offering your work. \r\n                        Our data protection policies and procedures are available for you to view at any time and \r\n                        your information we hod can be removed from our system upon request. \r\n                        Please sign the form below to confirm you are happy for us to store your information \r\n                        for the reasons above and we shall add you to our system and \r\n                        contact you with the next steps in the application process.\r\n                    "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "mt-8" }, [
-                    _vm._v("Application Refference Number:")
-                  ]),
-                  _vm._v(" "),
-                  _c("vs-input", {
-                    model: {
-                      value: _vm.appl.ref_number,
-                      callback: function($$v) {
-                        _vm.$set(_vm.appl, "ref_number", $$v)
-                      },
-                      expression: "appl.ref_number"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _vm._m(18),
-                  _vm._v(" "),
-                  _vm._m(19),
-                  _vm._v(" "),
                   _c(
                     "div",
                     [
                       _c("file-upload", {
                         attrs: {
-                          upload_key: "interior",
+                          upload_key: "document",
                           onSuccess: _vm.changeUploadFile
                         }
                       })
                     ],
                     1
                   ),
+                  _vm._v(" "),
+                  _vm._m(18),
                   _vm._v(" "),
                   _c(
                     "div",
@@ -1201,7 +1328,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _vm._v("D.O.B"),
+      _vm._v("D. O. B"),
       _c("span", { staticClass: "required-item" })
     ])
   },
@@ -1327,7 +1454,7 @@ var staticRenderFns = [
       _vm._v(
         "\r\n                        Do you want to work full day's or part day's? \r\n                        "
       ),
-      _c("span", [
+      _c("span", { staticClass: "hint-lb" }, [
         _c("i", [
           _vm._v(
             "\r\n                                (Full day reauirements is approximately 8 hours delivering 600 - 1000 leaflets. \r\n                                Half day is approximately 4 hours delivering 300 -500 leaflets)\r\n                            "
@@ -1342,20 +1469,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _vm._v("\r\n                        Signature"),
+    return _c("div", { staticClass: "mt-8" }, [
+      _c("b", [_vm._v("Application Document")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "hint-lb" }, [
+        _vm._v("(File Format: Image(jpg, jpeg, png, gif,) or PDF)")
+      ]),
+      _vm._v(" "),
       _c("span", { staticClass: "required-item" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("b", [_vm._v("NOTE:")]),
-      _vm._v(
-        " \r\n                        Once your application has been submitted \r\n                        we will contact you with the next steps within 24 hours. \r\n                        There is no need to contact us by telephone to check the status of your application \r\n                        as we will contact you automatically.\r\n                    "
-      )
     ])
   },
   function() {
@@ -1363,14 +1484,10 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "mt-8" }, [
+      _c("b", [_vm._v("NOTE:")]),
       _vm._v(
-        "\r\n                        Application Document\r\n                        "
-      ),
-      _c("span", { staticClass: "hint-lb" }, [
-        _vm._v("(File Format: Image(jpg, jpeg, png, gif,) or PDF)")
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "required-item" })
+        " \r\n                        Once your application has been submitted \r\n                        we will contact you with the next steps within 24 hours. \r\n                        There is no need to contact us by telephone to check the status of your application \r\n                        as we will contact you automatically.\r\n                    "
+      )
     ])
   }
 ]
@@ -1451,6 +1568,41 @@ var render = function() {
           "div",
           { staticClass: "flex justify-between flex-wrap" },
           [
+            _vm.document
+              ? [
+                  _c(
+                    "div",
+                    { staticClass: "flex items-center" },
+                    [
+                      _vm.isImage(_vm.document)
+                        ? [
+                            _c("img", {
+                              staticClass: "mr-4",
+                              staticStyle: { width: "auto", height: "2.4rem" },
+                              attrs: {
+                                src: __webpack_require__(/*! @assets/images/file-icons/jpg.png */ "./resources/assets/images/file-icons/jpg.png")
+                              }
+                            })
+                          ]
+                        : [
+                            _c("img", {
+                              staticClass: "mr-4",
+                              staticStyle: { width: "auto", height: "2.4rem" },
+                              attrs: {
+                                src: __webpack_require__(/*! @assets/images/file-icons/pdf.png */ "./resources/assets/images/file-icons/pdf.png")
+                              }
+                            })
+                          ],
+                      _vm._v(" "),
+                      _c("div", { staticClass: "text-success font-bold" }, [
+                        _vm._v(_vm._s(_vm.document.name))
+                      ])
+                    ],
+                    2
+                  )
+                ]
+              : _vm._e(),
+            _vm._v(" "),
             _c(
               "vs-button",
               {
@@ -1458,7 +1610,7 @@ var render = function() {
                 attrs: {
                   type: "border",
                   "icon-pack": "feather",
-                  icon: "icon-x",
+                  icon: "icon-trash",
                   color: "dark"
                 },
                 on: {
@@ -1467,10 +1619,10 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("\n          Cancel\n      ")]
+              [_vm._v("\n          Remove\n      ")]
             )
           ],
-          1
+          2
         )
       ]
     ),
@@ -1479,7 +1631,7 @@ var render = function() {
       "div",
       {
         staticClass:
-          "px-8 py-16 mt-4 cursor-pointer text-center border-2 border-dashed d-theme-border-grey-light d-theme-dark-bg text-xl",
+          "p-8 mt-4 cursor-pointer text-center border-2 border-dashed d-theme-border-grey-light d-theme-dark-bg text-xl",
         on: {
           click: function($event) {
             return _vm.$refs.fileInput.click()
@@ -1522,6 +1674,28 @@ var staticRenderFns = []
 render._withStripped = true
 
 
+
+/***/ }),
+
+/***/ "./resources/assets/images/file-icons/jpg.png":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/file-icons/jpg.png ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/jpg.png?af5b421a864fd53988f2e23b61b7bb84";
+
+/***/ }),
+
+/***/ "./resources/assets/images/file-icons/pdf.png":
+/*!****************************************************!*\
+  !*** ./resources/assets/images/file-icons/pdf.png ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/pdf.png?63e0df68422fbcd4404f9b6efebdb3fc";
 
 /***/ }),
 

@@ -195,7 +195,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      name: '',
+      company_name: '',
+      contact_number: '',
+      email: '',
+      service: 0,
+      details: '',
+      services: [{
+        id: 0,
+        name: 'paint',
+        label: 'paint'
+      }, {
+        id: 1,
+        name: 'design',
+        label: 'design'
+      }, {
+        id: 2,
+        name: 'print',
+        label: 'print'
+      }]
+    };
+  }
+});
 
 /***/ }),
 
