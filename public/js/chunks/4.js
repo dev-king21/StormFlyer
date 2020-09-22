@@ -204,6 +204,70 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -230,7 +294,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".wrapper {\n  color: #151515;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n.wrapper .page-title {\n  font-size: 4.5rem;\n  color: #c83828;\n  font-weight: 600;\n}\n[dir] .wrapper .background {\n  background: #d8c8c8;\n  padding: 0.8rem;\n}\n.wrapper .feature-text {\n  font-size: 2.4rem;\n  font-weight: bold;\n  color: #222;\n}\n[dir] .wrapper .feature-text {\n  margin-top: 2rem;\n}\n.wrapper .dist-item {\n  width: 100%;\n  min-height: 40rem;\n}\n[dir] .wrapper .dist-item {\n  background-image: url(\"/images/pages/distribution-item.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n.wrapper .dist-title {\n  font-size: 4rem;\n  font-weight: bold;\n  color: white;\n}\n.wrapper .dist-desc {\n  color: #151515;\n  font-size: 4.6rem;\n  line-height: 5rem;\n  font-weight: bold;\n  min-height: 28rem;\n}", ""]);
+exports.push([module.i, ".wrapper {\n  color: #151515;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n[dir] .wrapper .wrapper-content {\n  padding: 0 3vw;\n}\n.wrapper .page-title {\n  font-size: 4vw;\n  color: #c83828;\n  font-weight: 600;\n}\n[dir] .wrapper .dist-item {\n  background-image: url(\"/images/pages/distribution-item.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n.wrapper .dist-title {\n  font-weight: bold;\n  color: white;\n}\n.wrapper .dist-price {\n  font-weight: bold;\n}\n.wrapper .feature-text {\n  font-weight: bold;\n  color: #222;\n}\n@media (min-width: 768px) {\n.wrapper .dist {\n    width: 100%;\n}\n[dir] .wrapper .dist {\n    margin-bottom: 6vw;\n}\n.wrapper .dist .dist-item {\n    width: 80vw;\n    min-height: 80vw;\n}\n.wrapper .dist .dist-title {\n    font-size: 8vw;\n    line-height: 8vw;\n}\n[dir] .wrapper .dist .dist-title {\n    margin-top: 8vw;\n}\n.wrapper .dist .dist-price {\n    height: 54vw;\n    font-size: 9vw;\n    line-height: 10vw;\n}\n.wrapper .dist .feature-text {\n    font-size: 4vw;\n}\n[dir] .wrapper .dist .feature-text {\n    margin: 3vw 10vw;\n}\n}\n@media (min-width: 1024px) {\n.wrapper .dist {\n    width: 50%;\n}\n[dir] .wrapper .dist {\n    margin-bottom: 3vw;\n}\n.wrapper .dist .dist-item {\n    width: 42vw;\n    min-height: 42vw;\n}\n.wrapper .dist .dist-title {\n    font-size: 4vw;\n    line-height: 4vw;\n}\n[dir] .wrapper .dist .dist-title {\n    margin-top: 4vw;\n}\n.wrapper .dist .dist-price {\n    height: 24vw;\n    font-size: 4.6vw;\n    line-height: 5vw;\n}\n.wrapper .dist .feature-text {\n    font-size: 2vw;\n}\n[dir] .wrapper .dist .feature-text {\n    margin: 2vw 8vw;\n}\n}\n@media (max-width: 546px) {\n.wrapper .dist {\n    width: 100%;\n}\n[dir] .wrapper .dist {\n    margin-bottom: 6vw;\n}\n.wrapper .dist .dist-item {\n    width: 80vw;\n    min-height: 80vw;\n}\n.wrapper .dist .dist-title {\n    font-size: 8vw;\n    line-height: 8vw;\n}\n[dir] .wrapper .dist .dist-title {\n    margin-top: 8vw;\n}\n.wrapper .dist .dist-price {\n    height: 54vw;\n    font-size: 9vw;\n    line-height: 10vw;\n}\n.wrapper .dist .feature-text {\n    font-size: 4vw;\n}\n[dir] .wrapper .dist .feature-text {\n    margin: 3vw 10vw;\n}\n}", ""]);
 
 // exports
 
@@ -249,7 +313,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "[dir] .red-bg {\n  background: #da2f1b;\n}\n.site-header {\n  font-size: 5rem;\n  line-height: 5.6rem;\n}\n[dir] .site-header {\n  padding: 2rem;\n}\n.site-header .logo {\n  width: 12rem;\n  height: 12rem;\n}\n[dir=ltr] .site-header .logo-text {\n  text-shadow: 2px 2px 5px #00000066;\n}\n[dir=rtl] .site-header .logo-text {\n  text-shadow: -2px 2px 5px #00000066;\n}", ""]);
+exports.push([module.i, "[dir] .red-bg {\n  background: #da2f1b;\n}\n@media (min-width: 768px) {\n.site-header {\n    font-size: 5rem;\n    line-height: 5.6rem;\n}\n[dir] .site-header {\n    padding: 2rem;\n}\n.site-header .logo {\n    width: 12rem;\n    height: 12rem;\n}\n[dir=ltr] .site-header .logo-text {\n    text-shadow: 2px 2px 5px #00000066;\n}\n[dir=rtl] .site-header .logo-text {\n    text-shadow: -2px 2px 5px #00000066;\n}\n}\n@media (max-width: 768px) {\n.site-header {\n    font-size: 2.6rem;\n    line-height: 3.4rem;\n}\n[dir] .site-header {\n    padding: 1rem;\n}\n.site-header .logo {\n    width: 6rem;\n    height: 6rem;\n}\n[dir=ltr] .site-header .logo-text {\n    text-shadow: 2px 2px 5px #00000066;\n}\n[dir=rtl] .site-header .logo-text {\n    text-shadow: -2px 2px 5px #00000066;\n}\n}", ""]);
 
 // exports
 
@@ -334,359 +398,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "wrapper" },
-    [
-      _c("app-header"),
-      _vm._v(" "),
-      _c("div", { staticClass: "w-full px-10" }, [
-        _c("div", { staticClass: "page-title my-8 ml-8" }, [
-          _vm._v("OUR DISTRIBUTION SERVICES:")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "vx-row" }, [
-          _c(
-            "div",
-            {
-              staticClass: "vx-col lg:w-1/2 md:w-full sm:w-full xs:w-full mb-16"
-            },
-            [
-              _c("div", { staticClass: "mx-16" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c("div", { staticClass: "feature-text" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [
-                        _vm._v(
-                          "Posted with up to 3 other non-competitive flyers."
-                        )
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Guaranteed Delivery ")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Targeted Delivery")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Full GPS Tracking")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Posted by Adults")])
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "vx-col lg:w-1/2 md:w-full sm:w-full xs:w-full mb-16"
-            },
-            [
-              _c("div", { staticClass: "mx-16" }, [
-                _vm._m(1),
-                _vm._v(" "),
-                _c("div", { staticClass: "feature-text" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Posted individually")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Guaranteed Delivery ")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Targeted Delivery")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Full GPS Tracking")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Posted by Adults")])
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "vx-col lg:w-1/2 md:w-full sm:w-full xs:w-full mb-16"
-            },
-            [
-              _c("div", { staticClass: "mx-16" }, [
-                _vm._m(2),
-                _vm._v(" "),
-                _c("div", { staticClass: "feature-text" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [
-                        _vm._v("Price dependent on size of Catalogues")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Guaranteed Delivery ")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Targeted Delivery")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Full GPS Tracking")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Posted by Adults")])
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "vx-col lg:w-1/2 md:w-full sm:w-full xs:w-full mb-16"
-            },
-            [
-              _c("div", { staticClass: "mx-16" }, [
-                _vm._m(3),
-                _vm._v(" "),
-                _c("div", { staticClass: "feature-text" }, [
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Email Marketing")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Social Media Ads")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Content Creation")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Marketplace Ads")])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center" },
-                    [
-                      _c("feather-icon", {
-                        staticClass: "mr-4",
-                        attrs: { icon: "CheckIcon" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", [_vm._v("Product Influencing")])
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          )
-        ])
-      ])
-    ],
+    [_c("app-header"), _vm._v(" "), _vm._m(0)],
     1
   )
 }
@@ -695,113 +407,257 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "dist-item flex flex-col items-center w-full" },
-      [
-        _c("div", { staticClass: "dist-title" }, [
-          _vm._v("Shared Distribution")
+    return _c("div", { staticClass: "w-full wrapper-content" }, [
+      _c("div", { staticClass: "page-title my-8 ml-8" }, [
+        _vm._v("OUR DISTRIBUTION SERVICES:")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "vx-row" }, [
+        _c("div", { staticClass: "dist vx-col" }, [
+          _c("div", [
+            _c(
+              "div",
+              { staticClass: "dist-item flex flex-col items-center w-full" },
+              [
+                _c("div", { staticClass: "dist-title" }, [
+                  _vm._v("Shared Distribution")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dist-price flex flex-col text-center items-center justify-center text-center"
+                  },
+                  [
+                    _vm._v("\r\n                            £ 20 "),
+                    _c("br"),
+                    _vm._v(
+                      "\r\n                            Per 1000 flyers\r\n                        "
+                    )
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "feature-text" }, [
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Posted with up to 3 other non-competitive flyers.\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Guaranteed Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Targeted Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Full GPS Tracking\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Posted by Adults\r\n                        "
+                )
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-col dist-desc text-center items-center justify-center text-center h-full"
-          },
-          [
-            _vm._v("\r\n                            £ 20 "),
-            _c("br"),
-            _vm._v(
-              "\r\n                            Per 1000 flyers\r\n                        "
-            )
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "dist-item flex flex-col items-center w-full" },
-      [
-        _c("div", { staticClass: "dist-title" }, [
-          _vm._v("Solus Distribution")
+        _c("div", { staticClass: "dist vx-col" }, [
+          _c("div", [
+            _c(
+              "div",
+              { staticClass: "dist-item flex flex-col items-center w-full" },
+              [
+                _c("div", { staticClass: "dist-title" }, [
+                  _vm._v("Solus Distribution")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dist-price flex flex-col text-center items-center justify-center"
+                  },
+                  [
+                    _vm._v("\r\n                            £ 35 "),
+                    _c("br"),
+                    _vm._v(
+                      "\r\n                            Per 1000 flyers\r\n                        "
+                    )
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "feature-text" }, [
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Posted individually\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Guaranteed Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Targeted Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Full GPS Tracking\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Posted by Adults\r\n                        "
+                )
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-col dist-desc text-center items-center justify-center h-full"
-          },
-          [
-            _vm._v("\r\n                            £ 35 "),
-            _c("br"),
-            _vm._v(
-              "\r\n                            Per 1000 flyers\r\n                        "
-            )
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "dist-item flex flex-col items-center w-full" },
-      [
-        _c("div", { staticClass: "dist-title" }, [_vm._v("Catalogues")]),
+        _c("div", { staticClass: "dist vx-col" }, [
+          _c("div", [
+            _c(
+              "div",
+              { staticClass: "dist-item flex flex-col items-center w-full" },
+              [
+                _c("div", { staticClass: "dist-title" }, [
+                  _vm._v("Catalogues")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dist-price flex flex-col text-center items-center justify-center"
+                  },
+                  [
+                    _vm._v("\r\n                            From £ 65 "),
+                    _c("br"),
+                    _vm._v(
+                      "\r\n                            Per 1000 flyers\r\n                        "
+                    )
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "feature-text" }, [
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Price dependent on size of Catalogues\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Guaranteed Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Targeted Delivery\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Full GPS Tracking\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Posted by Adults\r\n                        "
+                )
+              ])
+            ])
+          ])
+        ]),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-col dist-desc text-center items-center justify-center h-full"
-          },
-          [
-            _vm._v("\r\n                            From £ 65 "),
-            _c("br"),
-            _vm._v(
-              "\r\n                            Per 1000 flyers\r\n                        "
-            )
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "dist-item flex flex-col items-center w-full" },
-      [
-        _c("div", { staticClass: "dist-title" }, [_vm._v("Digital Marketing")]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-col dist-desc text-center items-center justify-center h-full"
-          },
-          [
-            _vm._v("\r\n                            Comming soon "),
-            _c("br"),
-            _vm._v(
-              "\r\n                            ...\r\n                        "
-            )
-          ]
-        )
-      ]
-    )
+        _c("div", { staticClass: "dist vx-col" }, [
+          _c("div", [
+            _c(
+              "div",
+              { staticClass: "dist-item flex flex-col items-center w-full" },
+              [
+                _c("div", { staticClass: "dist-title" }, [
+                  _vm._v("Digital Marketing")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dist-price flex flex-col text-center items-center justify-center"
+                  },
+                  [
+                    _vm._v("\r\n                            Comming soon "),
+                    _c("br"),
+                    _vm._v(
+                      "\r\n                            ...\r\n                        "
+                    )
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "feature-text" }, [
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Email Marketing\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Social Media Ads\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Content Creation\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Marketplace Ads\r\n                        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _vm._v(
+                  "\r\n                            ✔ Product Influencing\r\n                        "
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -826,33 +682,31 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("router-link", { attrs: { to: "/" } }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "flex w-full red-bg items-center justify-center site-header"
-      },
-      [
-        _c("img", {
-          staticClass: "logo mr-8",
-          attrs: {
-            src: __webpack_require__(/*! @assets/images/file-icons/google-chrome-icon-18-256.png */ "./resources/assets/images/file-icons/google-chrome-icon-18-256.png")
-          }
-        }),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "font-bold text-white text-center uppercase logo-text"
-          },
-          [
-            _vm._v("\n            stormflyer "),
-            _c("br"),
-            _vm._v(" distribution\n        ")
-          ]
-        )
-      ]
-    )
+    _c("div", {}, [
+      _c(
+        "div",
+        { staticClass: "flex red-bg items-center justify-center site-header" },
+        [
+          _c("img", {
+            staticClass: "logo mx-4 lg:mx-8 md:mx-8",
+            attrs: { src: __webpack_require__(/*! @assets/images/pages/logo.png */ "./resources/assets/images/pages/logo.png") }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "font-bold text-white text-center uppercase logo-text"
+            },
+            [
+              _vm._v("\n            stormflyer "),
+              _c("br"),
+              _vm._v(" distribution\n        ")
+            ]
+          )
+        ]
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -862,14 +716,14 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/images/file-icons/google-chrome-icon-18-256.png":
-/*!**************************************************************************!*\
-  !*** ./resources/assets/images/file-icons/google-chrome-icon-18-256.png ***!
-  \**************************************************************************/
+/***/ "./resources/assets/images/pages/logo.png":
+/*!************************************************!*\
+  !*** ./resources/assets/images/pages/logo.png ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/google-chrome-icon-18-256.png?879efbdea22313aeef20d6d94f3a888a";
+module.exports = "/images/logo.png?e98b04f0a534e0bb9fd2d806cf679551";
 
 /***/ }),
 
