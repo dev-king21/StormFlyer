@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Home.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Design.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -172,264 +172,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -438,42 +180,16 @@ __webpack_require__.r(__webpack_exports__);
     vSelect: vue_select__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   data: function data() {
-    return {
-      name: '',
-      company_name: '',
-      contact_number: '',
-      email: '',
-      service: 0,
-      details: '',
-      services: [{
-        id: 0,
-        name: 'paint',
-        label: 'paint'
-      }, {
-        id: 1,
-        name: 'design',
-        label: 'design'
-      }, {
-        id: 2,
-        name: 'print',
-        label: 'print'
-      }]
-    };
-  },
-  methods: {
-    goPage: function goPage(page) {
-      this.$router.push(page);
-    },
-    setService: function setService() {}
+    return {};
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -482,7 +198,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".wrapper {\n  width: 100%;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n[dir] .wrapper .main-button {\n  background-image: url(\"/images/pages/home-button.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n.wrapper .main-button .title {\n  font-weight: bold;\n}\n.wrapper .main-button .hint {\n  font-weight: bold;\n  color: #6398e8;\n}\n.wrapper .description {\n  color: red;\n}\n@media (min-width: 576px) {\n.wrapper .social-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .contact-phone {\n    font-size: 1.6rem;\n}\n.wrapper .description {\n    font-size: 1.3rem;\n}\n.wrapper .desc-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .desc-text {\n    font-size: 2rem;\n    color: #151515;\n}\n[dir] .wrapper .contact {\n    padding: 0.7rem 1.4rem;\n    margin-top: 0.7rem;\n}\n.wrapper .contact .contact-header {\n    font-size: 2rem;\n}\n.wrapper .contact .contact-subheader {\n    font-size: 1.1rem;\n}\n[dir] .wrapper .contact .vs-input, [dir] .wrapper .contact .vs-con-textarea, [dir] .wrapper .contact .vs__dropdown-toggle, [dir] .wrapper .contact .vs-button {\n    margin-top: 1rem;\n}\n.wrapper .contact input, .wrapper .contact textarea {\n    font-size: 1rem !important;\n}\n.wrapper .contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .wrapper .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .wrapper .contact .contact-content {\n    margin: 1.5rem 0;\n}\n}\n@media (min-width: 769px) {\n.wrapper .contact-phone {\n    font-size: 2.2rem;\n}\n.wrapper .social-icon {\n    width: 5rem;\n    height: 5rem;\n}\n.wrapper .description {\n    font-size: 1.8rem;\n}\n.wrapper .desc-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .desc-text {\n    font-size: 3rem;\n    color: #151515;\n}\n[dir] .wrapper .contact {\n    padding: 0.8rem 1.6rem;\n    margin-top: 1rem;\n}\n.wrapper .contact .contact-header {\n    font-size: 2.6rem;\n}\n.wrapper .contact .contact-subheader {\n    font-size: 1.8rem;\n}\n[dir] .wrapper .contact .vs-input, [dir] .wrapper .contact .vs-con-textarea, [dir] .wrapper .contact .vs__dropdown-toggle, [dir] .wrapper .contact .vs-button {\n    margin-top: 1.4rem;\n}\n.wrapper .contact input, .wrapper .contact textarea {\n    font-size: 1rem !important;\n}\n.wrapper .contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .wrapper .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .wrapper .contact .contact-content {\n    margin: 1.6rem 0;\n}\n}\n@media (min-width: 1025px) {\n.wrapper .contact-phone {\n    font-size: 2.4rem;\n}\n.wrapper .social-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .description {\n    font-size: 2.2rem;\n}\n.wrapper .desc-icon {\n    width: 6.8rem;\n    height: 6.8rem;\n}\n.wrapper .desc-text {\n    font-size: 3.6rem;\n    color: #151515;\n}\n[dir] .wrapper .contact {\n    padding: 1rem 2rem;\n    margin-top: 1rem;\n}\n.wrapper .contact .contact-header {\n    font-size: 3rem;\n}\n.wrapper .contact .contact-subheader {\n    font-size: 2rem;\n}\n[dir] .wrapper .contact .vs-input, [dir] .wrapper .contact .vs-con-textarea, [dir] .wrapper .contact .vs__dropdown-toggle, [dir] .wrapper .contact .vs-button {\n    margin-top: 1.6rem;\n}\n.wrapper .contact input, .wrapper .contact textarea {\n    font-size: 1.2rem !important;\n}\n.wrapper .contact .vs-input--placeholder {\n    font-size: 1.2rem !important;\n}\n[dir] .wrapper .contact .input-span-placeholder {\n    padding: 0.8rem !important;\n}\n[dir] .wrapper .contact .contact-content {\n    margin: 2rem 0;\n}\n}\n@media (max-width: 576px) {\n.wrapper .contact-phone {\n    font-size: 1rem;\n}\n.wrapper .social-icon {\n    width: 2.6rem;\n    height: 2.6rem;\n}\n.wrapper .description {\n    font-size: 1.2rem;\n}\n.wrapper .desc-icon {\n    width: 2.8rem;\n    height: 2.8rem;\n}\n.wrapper .desc-text {\n    font-size: 1.6rem;\n    color: #151515;\n}\n[dir] .wrapper .contact {\n    padding: 0.5rem 1rem;\n    margin-top: 0.5rem;\n}\n.wrapper .contact .contact-header {\n    font-size: 1.6rem;\n}\n.wrapper .contact .contact-subheader {\n    font-size: 0.8rem;\n}\n[dir] .wrapper .contact .contact-content {\n    margin: 1rem 0;\n}\n[dir] .wrapper .contact .vs-input, [dir] .wrapper .contact .vs-con-textarea, [dir] .wrapper .contact .vs__dropdown-toggle, [dir] .wrapper .contact .vs-button {\n    margin-top: 0.8rem;\n}\n.wrapper .contact input, .wrapper .contact textarea {\n    font-size: 0.8rem !important;\n}\n.wrapper .contact .vs-input--placeholder {\n    font-size: 0.8rem !important;\n}\n[dir] .wrapper .contact .input-span-placeholder {\n    padding: 0.4rem !important;\n}\n}\n.wrapper .dist-button {\n  width: 32vw;\n  height: 32vw;\n}\n.wrapper .dist-button .title {\n  font-size: 4vw !important;\n  line-height: 5vw !important;\n}\n.wrapper .dist-button .hint {\n  font-size: 1.8vw !important;\n  line-height: 1.8vw !important;\n}\n.wrapper .job-button {\n  width: 26vw;\n  height: 26vw;\n}\n.wrapper .job-button .title {\n  font-size: 3.2vw !important;\n  line-height: 4vw !important;\n}\n.wrapper .job-button .hint {\n  font-size: 1.5vw !important;\n  line-height: 1.5vw !important;\n}\n.wrapper .design-button {\n  width: 22vw;\n  height: 22vw;\n}\n.wrapper .design-button .title {\n  font-size: 2.6vw !important;\n  line-height: 3.2vw !important;\n}\n.wrapper .design-button .hint {\n  font-size: 1.3vw !important;\n  line-height: 1.3vw !important;\n}\n[dir] .wrapper .contact {\n  background: black;\n}\n.wrapper .contact input, .wrapper .contact textarea {\n  font-family: \"Times New Roman\", Times, serif;\n}\n[dir] .wrapper .contact input, [dir] .wrapper .contact textarea {\n  border-radius: 0 !important;\n}\n.wrapper .contact .input-span-placeholder {\n  color: #151515 !important;\n}\n[dir] .wrapper .contact .vs-con-textarea {\n  border-radius: 0 !important;\n}\n[dir] .wrapper .contact .v-select {\n  background: white !important;\n}", ""]);
+exports.push([module.i, ".wrapper {\n  color: black;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n@media (min-width: 576px) {\n[dir] .wrapper .design-item {\n    margin-bottom: 2rem;\n    padding: 0 1.5rem;\n}\n.wrapper .design-item .design-item-title {\n    font-size: 1.6rem;\n}\n[dir] .wrapper .design-item .design-item-title {\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n}\n.wrapper .design-item .design-item-text {\n    font-size: 1.6rem;\n}\n[dir] .wrapper .design-item .design-item-text {\n    margin: 2.8rem 0;\n}\n}\n@media (min-width: 769px) {\n[dir] .wrapper .design-item {\n    margin-bottom: 4rem;\n    padding: 0 2.5rem;\n}\n.wrapper .design-item .design-item-title {\n    font-size: 1.6rem;\n}\n[dir] .wrapper .design-item .design-item-title {\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n}\n.wrapper .design-item .design-item-text {\n    font-size: 1.6rem;\n}\n[dir] .wrapper .design-item .design-item-text {\n    margin: 2.8rem 0;\n}\n}\n@media (max-width: 576px) {\n[dir] .wrapper .design-item {\n    margin-bottom: 1.5rem;\n    padding: 0 1rem;\n}\n.wrapper .design-item .design-item-title {\n    font-size: 1.2rem;\n}\n[dir] .wrapper .design-item .design-item-title {\n    margin-top: 0.6rem;\n    margin-bottom: 1rem;\n}\n.wrapper .design-item .design-item-text {\n    font-size: 1.2rem;\n}\n[dir] .wrapper .design-item .design-item-text {\n    margin: 1.2rem 0;\n}\n}\n.wrapper .design-item-title {\n  font-weight: bold;\n}\n[dir=ltr] .wrapper .box-shadow {\n  box-shadow: 2px 2px 12px #00000044;\n}\n[dir=rtl] .wrapper .box-shadow {\n  box-shadow: -2px 2px 12px #00000044;\n}", ""]);
 
 // exports
 
@@ -508,15 +224,15 @@ exports.push([module.i, "[dir] .red-bg {\n  background: #da2f1b;\n}\n@media (min
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&");
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Design.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -568,10 +284,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee&":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee& ***!
-  \******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30& ***!
+  \********************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -586,248 +302,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "wrapper" },
-    [
-      _c("app-header"),
-      _vm._v(" "),
-      _c("div", { staticClass: "flex justify-center items-start w-full" }, [
-        _c("div", { staticClass: "flex md:px-10 sm:px-4 xs:px-4" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "flex flex-col main-button dist-button mt-4 items-center justify-center cursor-pointer text-white text-center",
-              on: {
-                click: function($event) {
-                  return _vm.goPage("distribution")
-                }
-              }
-            },
-            [
-              _c("div", { staticClass: "title text-white" }, [
-                _vm._v("Distribution")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "hint" }, [
-                _vm._v("Get your flyers out there")
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-col items-center md:px-10 sm:px-4 xs:px-4 mb-4"
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "flex flex-col main-button job-button mt-4 items-center justify-center cursor-pointer text-white text-center",
-                on: {
-                  click: function($event) {
-                    return _vm.goPage("job")
-                  }
-                }
-              },
-              [
-                _c("div", { staticClass: "title text-white" }, [
-                  _vm._v("Jobs")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "hint" }, [
-                  _vm._v("Double tap on text to edit")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "flex items-end justify-end",
-                staticStyle: { "margin-top": "-1rem !important" }
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "flex flex-col main-button design-button items-center justify-center cursor-pointer text-white text-center mr-10",
-                    on: {
-                      click: function($event) {
-                        return _vm.goPage("design")
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "title text-white" }, [
-                      _vm._v("Design")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "hint" }, [
-                      _vm._v("Double tap on text to edit")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "flex flex-col main-button design-button items-center justify-center cursor-pointer text-white text-center ml-10",
-                    on: {
-                      click: function($event) {
-                        return _vm.goPage("testimonial")
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "title text-white" }, [
-                      _vm._v("Testimonials")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "hint" }, [
-                      _vm._v("Double tap on text to edit")
-                    ])
-                  ]
-                )
-              ]
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("div", { staticClass: "contact text-white w-full" }, [
-        _c("div", { staticClass: "font-bold text-white contact-header" }, [
-          _vm._v("Request More Information")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "contact-subheader" }, [
-          _vm._v(
-            "\r\n            For details on any of the services we offer, complete the form below and a member of our team will be in touch.\r\n        "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "contact-content vx-row" }, [
-          _c(
-            "div",
-            { staticClass: "vx-col w-1/2" },
-            [
-              _c("vs-input", {
-                staticClass: "w-full",
-                attrs: { color: "black", placeholder: "Name" },
-                model: {
-                  value: _vm.name,
-                  callback: function($$v) {
-                    _vm.name = $$v
-                  },
-                  expression: "name"
-                }
-              }),
-              _vm._v(" "),
-              _c("vs-input", {
-                staticClass: "w-full",
-                attrs: { color: "black", placeholder: "Company Name" },
-                model: {
-                  value: _vm.company_name,
-                  callback: function($$v) {
-                    _vm.company_name = $$v
-                  },
-                  expression: "company_name"
-                }
-              }),
-              _vm._v(" "),
-              _c("vs-input", {
-                staticClass: "w-full",
-                attrs: { color: "black", placeholder: "Contact Number" },
-                model: {
-                  value: _vm.contact_number,
-                  callback: function($$v) {
-                    _vm.contact_number = $$v
-                  },
-                  expression: "contact_number"
-                }
-              }),
-              _vm._v(" "),
-              _c("vs-input", {
-                staticClass: "w-full",
-                attrs: { color: "black", placeholder: "Email Address" },
-                model: {
-                  value: _vm.email,
-                  callback: function($$v) {
-                    _vm.email = $$v
-                  },
-                  expression: "email"
-                }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "vx-col w-1/2" },
-            [
-              _c("v-select", {
-                attrs: { placeholder: "Which Service", options: _vm.services },
-                on: { input: _vm.setService },
-                model: {
-                  value: _vm.service,
-                  callback: function($$v) {
-                    _vm.service = $$v
-                  },
-                  expression: "service"
-                }
-              }),
-              _vm._v(" "),
-              _c("vs-textarea", {
-                staticClass: "w-full bg-white text-black",
-                attrs: {
-                  placeholder: "Details Required",
-                  color: "black",
-                  height: "100px"
-                },
-                model: {
-                  value: _vm.details,
-                  callback: function($$v) {
-                    _vm.details = $$v
-                  },
-                  expression: "details"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "text-right" },
-                [
-                  _c(
-                    "vs-button",
-                    {
-                      staticClass: "font-bold",
-                      staticStyle: { color: "rgb(99, 180, 232)" },
-                      attrs: { color: "white" }
-                    },
-                    [
-                      _vm._v(
-                        "\r\n                        Send\r\n                    "
-                      )
-                    ]
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ])
-      ])
-    ],
+    [_c("app-header"), _vm._v(" "), _vm._m(0)],
     1
   )
 }
@@ -836,103 +311,86 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "flex items-center justify-between w-full px-10 my-8" },
-      [
-        _c("div", { staticClass: "contact-phone font-bold" }, [
-          _vm._v("\r\n            Telephone: 0800 595 777"),
-          _c("br"),
-          _vm._v(
-            "\r\n            Email: info@stormflyerdistribution.com\r\n        "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c("img", {
-            staticClass: "social-icon mr-2",
-            attrs: {
-              src:
-                "https://cdn3.iconfinder.com/data/icons/material-design-social-icons/152/instagram_icon-128.png"
-            }
-          }),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "social-icon",
-            attrs: {
-              src:
-                "https://cdn3.iconfinder.com/data/icons/material-design-social-icons/152/facebook_icon-128.png"
-            }
-          })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vx-row mx-4" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "vx-col lg:w-1/2 md:w-1/2 sm:w-full xs:w-full description px-4"
-        },
-        [
-          _c("b", [_vm._v("Marketing by storm!")]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(
-            "\r\n            Weather your audiences are at the most urban parts of the city or the greenest corners of the countryside, we have \r\n            teams of GPS tracked distribution operatives raring to take your marketing distribution by storm to wherever your \r\n            business commands. "
-          ),
-          _c("br"),
-          _c("br"),
-          _vm._v(
-            " Not only do we make sure your messages reach your targeted areas, we also offer \r\n            streamlining of the entire process. From design & print to targeting and distribution, we have experienced\r\n            marketing & design staff on hand to bring life to whatever message you wish to project. \r\n            Get ready to command the storm!\r\n        "
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "vx-col lg:w-1/2 md:w-1/2 sm:w-full xs:w-full px-4" },
-        [
-          _c("div", [
+    return _c("div", { staticClass: "w-full px-10" }, [
+      _c("div", { staticClass: "vx-row mt-8" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "design-item vx-col xl:1-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full"
+          },
+          [
             _c("img", {
-              staticClass: "responsive mt-4",
-              staticStyle: { "box-shadow": "2px 2px 12px #00000044" },
-              attrs: { src: __webpack_require__(/*! @assets/images/pages/home-flyer.png */ "./resources/assets/images/pages/home-flyer.png") }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "desc-text ml-4" }, [
-                _vm._v("U.K WIDE COVERAGE")
-              ])
+              staticClass: "responsive box-shadow",
+              attrs: { src: __webpack_require__(/*! @assets/images/pages/design-flyer.png */ "./resources/assets/images/pages/design-flyer.png") }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-title" }, [
+              _vm._v("Copywriting and Graphic Design")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "desc-text ml-4" }, [
-                _vm._v("GPS TRACKED")
-              ])
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    We believe that the single biggest factor in the success of a\r\n                    leaflet's design is the call to action. So, how do you make sure\r\n                    that your call to action is effective? And how do you make sure\r\n                    that your potential customers pay attention to it in the first\r\n                    place? Dull or confusing design and copywriting can be enough\r\n                    to put off even your most ardent fans. After you've done all the\r\n                    hard work of building a great business and organising a leaflet\r\n                    distribution campaign to promote, we think you might as well\r\n                    make sure that final step is taken care of. We want your leaflet\r\n                    to grab people's attention and turn them into customers for you.\r\n                    are up to the same level as the rest of your business.\r\n                    That's why we can make sure that your copywriting and design\r\n                "
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "desc-text ml-4" }, [
-                _vm._v("DESIGN & PRINT")
-              ])
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    When it comes to copywriting, we know this isn't just a matter\r\n                    of blandly stating features and benefits. Good copy is, first and\r\n                    foremost, engaging, but also easily understandable and\r\n                    genuinely persuasive. Whether it's a one-line slogan or a\r\n                    multi-page advertorial it needs to conform to these standards. If\r\n                    it's not a skill that your business has access to in-house, then it's\r\n                    highly recommended to take advantage of our service. It is often\r\n                    the deciding factor in getting your message noticed or ignored.\r\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    The design of your leaflets is possibly even more important.\r\n                    Good design can makes your business seem attractive even\r\n                    before your potential customer knows any information about it.\r\n                    Amateurish design will make your business appear amateur, it's\r\n                    as simple as that. From that starting point, you're fighting an\r\n                    uphill battle. So, it's always worth investing in professional\r\n                    design which comes with an understanding of aesthetics but\r\n                    also how to communicate a brand visually.\r\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    So, give us a call and let's have a chat about how we can help\r\n                    show off your brand to its best advantage\r\n                "
+              )
             ])
-          ])
-        ]
-      )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "design-item vx-col xl:1-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full"
+          },
+          [
+            _c("img", {
+              staticClass: "responsive box-shadow",
+              attrs: { src: __webpack_require__(/*! @assets/images/pages/print-flyer.png */ "./resources/assets/images/pages/print-flyer.png") }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-title" }, [
+              _vm._v("Print Management")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    The key point here is that we are confident that we can\r\n                    provide print at a lower rate than you're able to source from\r\n                    your current print supplier. Not only that, but the fact that\r\n                    our printing is either done in house or with our network of\r\n                    approved print suppliers means that we can offer a fast and\r\n                    efficient service, removing the headache of having to deal\r\n                    with a separate company. The chain from print to distribution\r\n                    is unbroken, cutting out those logistical nightmares that\r\n                    come with co-ordinating more than one supplier. Put us to\r\n                    the test and we'll show you what we can do.\r\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    Something to bear in mind is that, usually, once our clients\r\n                    have tried our print management service, they keep coming\r\n                    back to us for all their printing. And we don't just mean\r\n                    printed paper. We offer printing onto virtually anything,\r\n                    including T-shirts, vinyl, banners, flags, badges... if it's possible\r\n                    to print on it we can probably handle it. Of course, all of that\r\n                    comes with the same confidence that we can offer lower\r\n                    rates than you could get from your current print supplier.\r\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "design-item-text" }, [
+              _vm._v(
+                "\r\n                    We really do intend to be the only company you need to deal\r\n                    with for any of your marketing needs. That's why printing is\r\n                    such a key element for us. Even as more and more of your\r\n                    business moves online, we're a very long way from\r\n                    eliminating physical branded items. And, given our expertise\r\n                    in design and all the rest of the marketing process, we think it\r\n                    makes sense to source your printing from us too. You can\r\n                    have the confidence we understand what you need and we'll\r\n                    deliver it at a great price.\r\n                "
+              )
+            ])
+          ]
+        )
+      ])
     ])
   }
 ]
@@ -958,30 +416,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("router-link", { attrs: { to: "/" } }, [
-    _c("div", {}, [
-      _c(
-        "div",
-        { staticClass: "flex red-bg items-center justify-center site-header" },
-        [
-          _c("img", {
-            staticClass: "logo mx-4 lg:mx-8 md:mx-8",
-            attrs: { src: __webpack_require__(/*! @assets/images/pages/logo.png */ "./resources/assets/images/pages/logo.png") }
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "font-bold text-white text-center uppercase logo-text"
-            },
-            [
-              _vm._v("\n            stormflyer "),
-              _c("br"),
-              _vm._v(" distribution\n        ")
-            ]
-          )
-        ]
-      )
+    _c("div", { staticClass: "flex red-bg items-center justify-center" }, [
+      _c("img", {
+        staticClass: "logo responsive w-1/2",
+        attrs: { src: __webpack_require__(/*! @assets/images/pages/logo.jpeg */ "./resources/assets/images/pages/logo.jpeg") }
+      })
     ])
   ])
 }
@@ -992,40 +431,51 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/assets/images/pages/home-flyer.png":
-/*!******************************************************!*\
-  !*** ./resources/assets/images/pages/home-flyer.png ***!
-  \******************************************************/
+/***/ "./resources/assets/images/pages/design-flyer.png":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/pages/design-flyer.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/home-flyer.png?ac2ee501d0bb3ea9ff5b67008a3ee411";
+module.exports = "/images/design-flyer.png?0be6c5b904df97ab1789628d95964146";
 
 /***/ }),
 
-/***/ "./resources/assets/images/pages/logo.png":
-/*!************************************************!*\
-  !*** ./resources/assets/images/pages/logo.png ***!
-  \************************************************/
+/***/ "./resources/assets/images/pages/logo.jpeg":
+/*!*************************************************!*\
+  !*** ./resources/assets/images/pages/logo.jpeg ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/logo.png?e98b04f0a534e0bb9fd2d806cf679551";
+module.exports = "/images/logo.jpeg?c65f85744d383e0a9f92ecde9a9bdfdb";
 
 /***/ }),
 
-/***/ "./resources/js/src/views/Home.vue":
-/*!*****************************************!*\
-  !*** ./resources/js/src/views/Home.vue ***!
-  \*****************************************/
+/***/ "./resources/assets/images/pages/print-flyer.png":
+/*!*******************************************************!*\
+  !*** ./resources/assets/images/pages/print-flyer.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/print-flyer.png?9fb79dba3eab0c8bcca1e7f48b20401c";
+
+/***/ }),
+
+/***/ "./resources/js/src/views/Design.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/src/views/Design.vue ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=e85b2cee& */ "./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee&");
-/* harmony import */ var _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home.vue?vue&type=script&lang=js& */ "./resources/js/src/views/Home.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Design.vue?vue&type=template&id=2ec0db30& */ "./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30&");
+/* harmony import */ var _Design_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Design.vue?vue&type=script&lang=js& */ "./resources/js/src/views/Design.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Design.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1036,9 +486,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Design_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1048,54 +498,54 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/Home.vue"
+component.options.__file = "resources/js/src/views/Design.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/Home.vue?vue&type=script&lang=js&":
-/*!******************************************************************!*\
-  !*** ./resources/js/src/views/Home.vue?vue&type=script&lang=js& ***!
-  \******************************************************************/
+/***/ "./resources/js/src/views/Design.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/src/views/Design.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Design.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&":
-/*!***************************************************************************!*\
-  !*** ./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss& ***!
-  \***************************************************************************/
+/***/ "./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss& ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Design.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee&":
-/*!************************************************************************!*\
-  !*** ./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee& ***!
-  \************************************************************************/
+/***/ "./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30& ***!
+  \**************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=template&id=e85b2cee& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Home.vue?vue&type=template&id=e85b2cee&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Design.vue?vue&type=template&id=2ec0db30& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/Design.vue?vue&type=template&id=2ec0db30&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_e85b2cee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Design_vue_vue_type_template_id_2ec0db30___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

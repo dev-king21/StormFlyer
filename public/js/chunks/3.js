@@ -391,30 +391,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("router-link", { attrs: { to: "/" } }, [
-    _c("div", {}, [
-      _c(
-        "div",
-        { staticClass: "flex red-bg items-center justify-center site-header" },
-        [
-          _c("img", {
-            staticClass: "logo mx-4 lg:mx-8 md:mx-8",
-            attrs: { src: __webpack_require__(/*! @assets/images/pages/logo.png */ "./resources/assets/images/pages/logo.png") }
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "font-bold text-white text-center uppercase logo-text"
-            },
-            [
-              _vm._v("\n            stormflyer "),
-              _c("br"),
-              _vm._v(" distribution\n        ")
-            ]
-          )
-        ]
-      )
+    _c("div", { staticClass: "flex red-bg items-center justify-center" }, [
+      _c("img", {
+        staticClass: "logo responsive w-1/2",
+        attrs: { src: __webpack_require__(/*! @assets/images/pages/logo.jpeg */ "./resources/assets/images/pages/logo.jpeg") }
+      })
     ])
   ])
 }
@@ -436,14 +417,14 @@ module.exports = "/images/job-flyer.png?a63b325c543ad539074e8130db5d9895";
 
 /***/ }),
 
-/***/ "./resources/assets/images/pages/logo.png":
-/*!************************************************!*\
-  !*** ./resources/assets/images/pages/logo.png ***!
-  \************************************************/
+/***/ "./resources/assets/images/pages/logo.jpeg":
+/*!*************************************************!*\
+  !*** ./resources/assets/images/pages/logo.jpeg ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/logo.png?e98b04f0a534e0bb9fd2d806cf679551";
+module.exports = "/images/logo.jpeg?c65f85744d383e0a9f92ecde9a9bdfdb";
 
 /***/ }),
 
