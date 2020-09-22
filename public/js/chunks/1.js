@@ -398,7 +398,9 @@ __webpack_require__.r(__webpack_exports__);
           color: 'success'
         });
 
-        setTimeout(_this.$router.push("/mail/test/".concat(data._id)), 1000);
+        setTimeout(function () {
+          location.href = "/mail/test/".concat(data._id);
+        }, 1000);
       })["catch"](function (error) {
         _this.$vs.loading.close();
 
