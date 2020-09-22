@@ -9,10 +9,8 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
-/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _base_Header_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base/Header.vue */ "./resources/js/src/views/base/Header.vue");
-/* harmony import */ var _base_Footer_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./base/Footer.vue */ "./resources/js/src/views/base/Footer.vue");
+/* harmony import */ var _base_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base/Header.vue */ "./resources/js/src/views/base/Header.vue");
+/* harmony import */ var _base_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base/Footer.vue */ "./resources/js/src/views/base/Footer.vue");
 //
 //
 //
@@ -261,14 +259,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    AppHeader: _base_Header_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    AppFooter: _base_Footer_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    vSelect: vue_select__WEBPACK_IMPORTED_MODULE_0___default.a
+    AppHeader: _base_Header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    AppFooter: _base_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {};

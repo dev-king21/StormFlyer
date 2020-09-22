@@ -9,6 +9,8 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
+/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -195,14 +197,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    vSelect: vue_select__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
   data: function data() {
     return {
       name: '',
       company_name: '',
       contact_number: '',
       email: '',
-      service: 0,
+      service: {},
       details: '',
       services: [{
         id: 0,
@@ -218,6 +237,63 @@ __webpack_require__.r(__webpack_exports__);
         label: 'print'
       }]
     };
+  },
+  methods: {
+    reset: function reset() {
+      this.name = '';
+      this.company_name = '';
+      this.contact_number = '';
+      this.email = '';
+      this.service = {};
+      this.details = '';
+    },
+    sendContact: function sendContact() {
+      var _this = this;
+
+      var contact = {
+        username: this.name,
+        company: this.company_name,
+        email: this.email,
+        phone: this.contact_number,
+        service: this.service.name,
+        details: this.details
+      };
+
+      if (!contact.username || contact.username === '' || !contact.company || contact.company === '' || !contact.email || contact.email === '' || !contact.service || contact.service === '' || !contact.phone || contact.phone === '' || !contact.details || contact.details === '') {
+        return this.$vs.notify({
+          title: 'Error',
+          text: 'You must fill out all fields in the contact form',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'danger'
+        });
+      }
+
+      this.$vs.loading({
+        color: 'red',
+        type: 'sound'
+      });
+      this.$http.post('/api/contact', contact).then(function (response) {
+        _this.$vs.loading.close();
+
+        _this.$vs.notify({
+          title: 'Success',
+          text: 'Your message has been successfully sent to us. <br> Please wait until we will contact to you.',
+          iconPack: 'feather',
+          icon: 'icon-info',
+          color: 'success'
+        });
+
+        _this.reset();
+      })["catch"](function (error) {
+        _this.$vs.loading.close();
+
+        console.log(error);
+      });
+    }
+  },
+  created: function created() {
+    this.service = this.services[0];
   }
 });
 
@@ -235,7 +311,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@media (min-width: 576px) {\n[dir] .contact {\n    padding: 0.7rem 1.4rem;\n    margin-top: 0.7rem;\n}\n.contact .contact-header {\n    font-size: 2rem;\n}\n.contact .contact-subheader {\n    font-size: 1.1rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1rem;\n}\n.contact input, .contact textarea {\n    font-size: 1rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 1.5rem 0;\n}\n}\n@media (min-width: 769px) {\n[dir] .contact {\n    padding: 0.8rem 1.6rem;\n    margin-top: 1rem;\n}\n.contact .contact-header {\n    font-size: 2.6rem;\n}\n.contact .contact-subheader {\n    font-size: 1.8rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1.4rem;\n}\n.contact input, .contact textarea {\n    font-size: 1rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 1.6rem 0;\n}\n}\n@media (min-width: 1025px) {\n[dir] .contact {\n    padding: 1rem 2rem;\n    margin-top: 1rem;\n}\n.contact .contact-header {\n    font-size: 3rem;\n}\n.contact .contact-subheader {\n    font-size: 2rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1.6rem;\n}\n.contact input, .contact textarea {\n    font-size: 1.2rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1.2rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.8rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 2rem 0;\n}\n}\n@media (max-width: 576px) {\n[dir] .contact {\n    padding: 0.5rem 1rem;\n    margin-top: 0.5rem;\n}\n.contact .contact-header {\n    font-size: 1.6rem;\n}\n.contact .contact-subheader {\n    font-size: 0.8rem;\n}\n[dir] .contact .contact-content {\n    margin: 1rem 0;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 0.8rem;\n}\n.contact input, .contact textarea {\n    font-size: 0.8rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 0.8rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.4rem !important;\n}\n}\n[dir] .contact {\n  background: black;\n}\n.contact input, .contact textarea {\n  font-family: \"Times New Roman\", Times, serif;\n}\n[dir] .contact input, [dir] .contact textarea {\n  border-radius: 0 !important;\n}\n.contact .input-span-placeholder {\n  color: #151515 !important;\n}\n[dir] .contact .vs-con-textarea {\n  border-radius: 0 !important;\n}\n[dir] .contact .v-select {\n  background: white !important;\n}", ""]);
+exports.push([module.i, "@media (min-width: 576px) {\n[dir] .contact {\n    padding: 0.7rem 1.4rem;\n    margin-top: 0.7rem;\n}\n.contact .contact-header {\n    font-size: 2rem;\n}\n.contact .contact-subheader {\n    font-size: 1.1rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1rem;\n}\n.contact input, .contact textarea {\n    font-size: 1rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 1.5rem 0;\n}\n}\n@media (min-width: 769px) {\n[dir] .contact {\n    padding: 0.8rem 1.6rem;\n    margin-top: 1rem;\n}\n.contact .contact-header {\n    font-size: 2.6rem;\n}\n.contact .contact-subheader {\n    font-size: 1.8rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1.4rem;\n}\n.contact input, .contact textarea {\n    font-size: 1rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.6rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 1.6rem 0;\n}\n}\n@media (min-width: 1025px) {\n[dir] .contact {\n    padding: 1rem 2rem;\n    margin-top: 1rem;\n}\n.contact .contact-header {\n    font-size: 3rem;\n}\n.contact .contact-subheader {\n    font-size: 2rem;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 1.6rem;\n}\n.contact input, .contact textarea {\n    font-size: 1.2rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 1.2rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.8rem !important;\n}\n[dir] .contact .contact-content {\n    margin: 2rem 0;\n}\n}\n@media (max-width: 576px) {\n[dir] .contact {\n    padding: 0.5rem 1rem;\n    margin-top: 0.5rem;\n}\n.contact .contact-header {\n    font-size: 1.6rem;\n}\n.contact .contact-subheader {\n    font-size: 0.8rem;\n}\n[dir] .contact .contact-content {\n    margin: 1rem 0;\n}\n[dir] .contact .vs-input, [dir] .contact .vs-con-textarea, [dir] .contact .vs__dropdown-toggle, [dir] .contact .vs-button {\n    margin-top: 0.8rem;\n}\n.contact input, .contact textarea {\n    font-size: 0.8rem !important;\n}\n.contact .vs-input--placeholder {\n    font-size: 0.8rem !important;\n}\n[dir] .contact .input-span-placeholder {\n    padding: 0.4rem !important;\n}\n}\n[dir] .contact {\n  background: black;\n}\n.contact input, .contact textarea {\n  color: #151515;\n  font-family: \"Times New Roman\", Times, serif;\n}\n[dir] .contact input, [dir] .contact textarea {\n  border-radius: 0 !important;\n}\n.contact .input-span-placeholder {\n  color: #151515 !important;\n}\n[dir] .contact .vs-con-textarea {\n  border-radius: 0 !important;\n}\n[dir] .contact .v-select {\n  background: white !important;\n}", ""]);
 
 // exports
 
@@ -353,8 +429,21 @@ var render = function() {
         { staticClass: "vx-col w-1/2" },
         [
           _c("vs-input", {
+            directives: [
+              {
+                name: "validate",
+                rawName: "v-validate",
+                value: "required",
+                expression: "'required'"
+              }
+            ],
             staticClass: "w-full",
-            attrs: { color: "black", placeholder: "Name" },
+            attrs: {
+              color: "black",
+              placeholder: "Name",
+              name: "UserName",
+              "data-vv-validate-on": "blur"
+            },
             model: {
               value: _vm.name,
               callback: function($$v) {
@@ -364,9 +453,26 @@ var render = function() {
             }
           }),
           _vm._v(" "),
+          _c("div", { staticClass: "text-danger text-sm" }, [
+            _vm._v(_vm._s(_vm.errors.first("UserName")))
+          ]),
+          _vm._v(" "),
           _c("vs-input", {
+            directives: [
+              {
+                name: "validate",
+                rawName: "v-validate",
+                value: "required",
+                expression: "'required'"
+              }
+            ],
             staticClass: "w-full",
-            attrs: { color: "black", placeholder: "Company Name" },
+            attrs: {
+              color: "black",
+              placeholder: "Company Name",
+              name: "CompanyName",
+              "data-vv-validate-on": "blur"
+            },
             model: {
               value: _vm.company_name,
               callback: function($$v) {
@@ -376,9 +482,26 @@ var render = function() {
             }
           }),
           _vm._v(" "),
+          _c("div", { staticClass: "text-danger text-sm" }, [
+            _vm._v(_vm._s(_vm.errors.first("CompanyName")))
+          ]),
+          _vm._v(" "),
           _c("vs-input", {
+            directives: [
+              {
+                name: "validate",
+                rawName: "v-validate",
+                value: "required",
+                expression: "'required'"
+              }
+            ],
             staticClass: "w-full",
-            attrs: { color: "black", placeholder: "Contact Number" },
+            attrs: {
+              color: "black",
+              placeholder: "Contact Number",
+              name: "ContactNumber",
+              "data-vv-validate-on": "blur"
+            },
             model: {
               value: _vm.contact_number,
               callback: function($$v) {
@@ -388,9 +511,26 @@ var render = function() {
             }
           }),
           _vm._v(" "),
+          _c("div", { staticClass: "text-danger text-sm" }, [
+            _vm._v(_vm._s(_vm.errors.first("ContactNumber")))
+          ]),
+          _vm._v(" "),
           _c("vs-input", {
+            directives: [
+              {
+                name: "validate",
+                rawName: "v-validate",
+                value: "required|email",
+                expression: "'required|email'"
+              }
+            ],
             staticClass: "w-full",
-            attrs: { color: "black", placeholder: "Email Address" },
+            attrs: {
+              color: "black",
+              placeholder: "Email Address",
+              name: "Email",
+              "data-vv-validate-on": "blur"
+            },
             model: {
               value: _vm.email,
               callback: function($$v) {
@@ -398,7 +538,11 @@ var render = function() {
               },
               expression: "email"
             }
-          })
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-danger text-sm" }, [
+            _vm._v(_vm._s(_vm.errors.first("Email")))
+          ])
         ],
         1
       ),
@@ -408,8 +552,11 @@ var render = function() {
         { staticClass: "vx-col w-1/2" },
         [
           _c("v-select", {
-            attrs: { placeholder: "Which Service", options: _vm.services },
-            on: { input: _vm.setService },
+            attrs: {
+              placeholder: "Which Service",
+              clearable: false,
+              options: _vm.services
+            },
             model: {
               value: _vm.service,
               callback: function($$v) {
@@ -444,7 +591,8 @@ var render = function() {
                 {
                   staticClass: "font-bold",
                   staticStyle: { color: "rgb(99, 180, 232)" },
-                  attrs: { color: "white" }
+                  attrs: { color: "white" },
+                  on: { click: _vm.sendContact }
                 },
                 [_vm._v("\n                    Send\n                ")]
               )

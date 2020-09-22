@@ -4,11 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\JobApplication;
+use App\ContactMessage;
 use Validator;
 use Mail;
 
 class JobController extends Controller
 {
+    public function receiveContact(Request $request) {
+        $contact = new ContactMessage;
+        $contact->username = $request->post("username");
+        $contact->company = $request->post("company");
+        $contact->email = $request->post("email");
+        $contact->phone = $request->post("phone");
+        $contact->service = $request->post("service");
+        $contact->details = $request->post("details");
+
+        $contact->save();
+        return response()->json(["status" => "ok"]);
+    }
+
     public function receiveApplication(Request $request) {
 
         $v = Validator::make($request->all(), ['document' => 'mimes:png,gif,jpeg,jpg,pdf']);
