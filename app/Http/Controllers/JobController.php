@@ -57,12 +57,12 @@ class JobController extends Controller
         }); */
 
         $app->save();
-        return response()->json(['status' => 'ok']);
+        return response()->json(['status' => 'ok', '_id' => $app->id]);
     }
 
-    public function mailBladeTest(Request $request) {
+    public function mailBladeTest(Request $request, $id) {
         $data = array();
-        $data['app'] = JobApplication::find(1);
+        $data['app'] = JobApplication::find($id);
         return view('application_mail', $data);
     }
 }

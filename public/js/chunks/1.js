@@ -397,6 +397,8 @@ __webpack_require__.r(__webpack_exports__);
           icon: 'icon-info',
           color: 'success'
         });
+
+        setTimeout(_this.$router.push("/mail/test/".concat(data._id)), 1000);
       })["catch"](function (error) {
         _this.$vs.loading.close();
 
