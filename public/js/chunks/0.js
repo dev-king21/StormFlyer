@@ -225,16 +225,12 @@ __webpack_require__.r(__webpack_exports__);
       details: '',
       services: [{
         id: 0,
-        name: 'paint',
-        label: 'paint'
+        name: 'design',
+        label: 'Design'
       }, {
         id: 1,
-        name: 'design',
-        label: 'design'
-      }, {
-        id: 2,
         name: 'print',
-        label: 'print'
+        label: 'Print'
       }]
     };
   },

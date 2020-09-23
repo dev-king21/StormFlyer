@@ -290,7 +290,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".wrapper {\n  width: 100%;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n[dir] .wrapper .main-button {\n  background-image: url(\"/images/pages/home-button.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n.wrapper .main-button .title {\n  font-weight: bold;\n}\n.wrapper .main-button .hint {\n  font-weight: bold;\n  color: #6398e8;\n}\n.wrapper .description {\n  color: red;\n}\n@media (min-width: 576px) {\n.wrapper .social-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .contact-phone {\n    font-size: 1.6rem;\n}\n.wrapper .description {\n    font-size: 1.3rem;\n}\n.wrapper .desc-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .desc-text {\n    font-size: 2rem;\n    color: #151515;\n}\n}\n@media (min-width: 769px) {\n.wrapper .contact-phone {\n    font-size: 2.2rem;\n}\n.wrapper .social-icon {\n    width: 5rem;\n    height: 5rem;\n}\n.wrapper .description {\n    font-size: 1.8rem;\n}\n.wrapper .desc-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .desc-text {\n    font-size: 3rem;\n    color: #151515;\n}\n}\n@media (min-width: 1025px) {\n.wrapper .contact-phone {\n    font-size: 2.4rem;\n}\n.wrapper .social-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .description {\n    font-size: 2.2rem;\n}\n.wrapper .desc-icon {\n    width: 6.8rem;\n    height: 6.8rem;\n}\n.wrapper .desc-text {\n    font-size: 3.6rem;\n    color: #151515;\n}\n}\n@media (max-width: 576px) {\n.wrapper .contact-phone {\n    font-size: 1rem;\n}\n.wrapper .social-icon {\n    width: 2.6rem;\n    height: 2.6rem;\n}\n.wrapper .description {\n    font-size: 1.2rem;\n}\n.wrapper .desc-icon {\n    width: 2.8rem;\n    height: 2.8rem;\n}\n.wrapper .desc-text {\n    font-size: 1.6rem;\n    color: #151515;\n}\n}\n.wrapper .dist-button {\n  width: 32vw;\n  height: 32vw;\n}\n.wrapper .dist-button .title {\n  font-size: 4vw !important;\n  line-height: 5vw !important;\n}\n.wrapper .dist-button .hint {\n  font-size: 1.8vw !important;\n  line-height: 1.8vw !important;\n}\n.wrapper .job-button {\n  width: 26vw;\n  height: 26vw;\n}\n.wrapper .job-button .title {\n  font-size: 3.2vw !important;\n  line-height: 4vw !important;\n}\n.wrapper .job-button .hint {\n  font-size: 1.5vw !important;\n  line-height: 1.5vw !important;\n}\n.wrapper .design-button {\n  width: 22vw;\n  height: 22vw;\n}\n.wrapper .design-button .title {\n  font-size: 2.6vw !important;\n  line-height: 3.2vw !important;\n}\n.wrapper .design-button .hint {\n  font-size: 1.3vw !important;\n  line-height: 1.3vw !important;\n}", ""]);
+exports.push([module.i, ".wrapper {\n  width: 100%;\n}[dir] .wrapper {\n  background: #d8d8d8;\n}\n[dir] .wrapper .main-button {\n  background-image: url(\"/images/pages/home-button.png\");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n.wrapper .main-button .title {\n  font-weight: bold;\n}\n.wrapper .main-button .hint {\n  font-weight: bold;\n  color: #6398e8;\n}\n.wrapper .description {\n  color: red;\n}\n@media (min-width: 576px) {\n.wrapper .social-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .contact-phone {\n    font-size: 1.6rem;\n}\n.wrapper .description {\n    font-size: 1.3rem;\n}\n.wrapper .desc-icon {\n    width: 4rem;\n    height: 4rem;\n}\n.wrapper .desc-text {\n    font-size: 2rem;\n    color: #151515;\n}\n}\n@media (min-width: 769px) {\n.wrapper .contact-phone {\n    font-size: 2.2rem;\n}\n.wrapper .social-icon {\n    width: 5rem;\n    height: 5rem;\n}\n.wrapper .description {\n    font-size: 1.8rem;\n}\n.wrapper .desc-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .desc-text {\n    font-size: 3rem;\n    color: #151515;\n}\n}\n@media (min-width: 1025px) {\n.wrapper .contact-phone {\n    font-size: 2.4rem;\n}\n.wrapper .social-icon {\n    width: 6rem;\n    height: 6rem;\n}\n.wrapper .description {\n    font-size: 2.2rem;\n}\n.wrapper .desc-icon {\n    width: 6.8rem;\n    height: 6.8rem;\n}\n.wrapper .desc-text {\n    font-size: 3.6rem;\n    color: #151515;\n}\n}\n@media (max-width: 576px) {\n.wrapper .contact-phone {\n    font-size: 1rem;\n}\n.wrapper .social-icon {\n    width: 2.6rem;\n    height: 2.6rem;\n}\n.wrapper .description {\n    font-size: 1.2rem;\n}\n.wrapper .desc-icon {\n    width: 2.8rem;\n    height: 2.8rem;\n}\n.wrapper .desc-text {\n    font-size: 1.6rem;\n    color: #151515;\n}\n}\n.wrapper .dist-button {\n  width: 32vw;\n  height: 32vw;\n}\n.wrapper .dist-button .title {\n  font-size: 4vw !important;\n  line-height: 5vw !important;\n}\n.wrapper .dist-button .hint {\n  font-size: 1.8vw !important;\n  line-height: 1.8vw !important;\n}\n.wrapper .job-button {\n  width: 26vw;\n  height: 26vw;\n}\n.wrapper .job-button .title {\n  font-size: 3.6vw !important;\n  line-height: 4vw !important;\n}\n.wrapper .job-button .hint {\n  font-size: 1.5vw !important;\n  line-height: 1.5vw !important;\n}\n.wrapper .design-button {\n  width: 22vw;\n  height: 22vw;\n}\n.wrapper .design-button .title {\n  font-size: 2.6vw !important;\n  line-height: 3.2vw !important;\n}\n.wrapper .design-button .hint {\n  font-size: 1.3vw !important;\n  line-height: 1.3vw !important;\n}", ""]);
 
 // exports
 
@@ -364,10 +364,6 @@ var render = function() {
             [
               _c("div", { staticClass: "title text-white" }, [
                 _vm._v("Distribution")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "hint" }, [
-                _vm._v("Get your flyers out there")
               ])
             ]
           )
@@ -391,15 +387,7 @@ var render = function() {
                   }
                 }
               },
-              [
-                _c("div", { staticClass: "title text-white" }, [
-                  _vm._v("Jobs")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "hint" }, [
-                  _vm._v("Double tap on text to edit")
-                ])
-              ]
+              [_c("div", { staticClass: "title text-white" }, [_vm._v("Jobs")])]
             ),
             _vm._v(" "),
             _c(
@@ -423,10 +411,6 @@ var render = function() {
                   [
                     _c("div", { staticClass: "title text-white" }, [
                       _vm._v("Design")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "hint" }, [
-                      _vm._v("Double tap on text to edit")
                     ])
                   ]
                 ),
@@ -445,10 +429,6 @@ var render = function() {
                   [
                     _c("div", { staticClass: "title text-white" }, [
                       _vm._v("Testimonials")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "hint" }, [
-                      _vm._v("Double tap on text to edit")
                     ])
                   ]
                 )
@@ -477,7 +457,7 @@ var staticRenderFns = [
       { staticClass: "flex items-center justify-between w-full px-10 my-8" },
       [
         _c("div", { staticClass: "contact-phone font-bold" }, [
-          _vm._v("\r\n            Telephone: 0800 595 777"),
+          _vm._v("\r\n            Telephone: 0744 0631 204"),
           _c("br"),
           _vm._v(
             "\r\n            Email: info@stormflyerdistribution.com\r\n        "
@@ -544,15 +524,23 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", [
             _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
+              _c("img", {
+                staticClass: "desc-icon",
+                attrs: { src: __webpack_require__(/*! @assets/images/file-icons/uk_wide.png */ "./resources/assets/images/file-icons/uk_wide.png") }
+              }),
               _vm._v(" "),
               _c("div", { staticClass: "desc-text ml-4" }, [
-                _vm._v("U.K WIDE COVERAGE")
+                _vm._v("U. K WIDE COVERAGE")
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
+              _c("img", {
+                staticClass: "desc-icon",
+                attrs: {
+                  src: __webpack_require__(/*! @assets/images/file-icons/gps_track.png */ "./resources/assets/images/file-icons/gps_track.png")
+                }
+              }),
               _vm._v(" "),
               _c("div", { staticClass: "desc-text ml-4" }, [
                 _vm._v("GPS TRACKED")
@@ -560,7 +548,12 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex items-end mt-8" }, [
-              _c("img", { staticClass: "desc-icon" }),
+              _c("img", {
+                staticClass: "desc-icon",
+                attrs: {
+                  src: __webpack_require__(/*! @assets/images/file-icons/design_print.png */ "./resources/assets/images/file-icons/design_print.png")
+                }
+              }),
               _vm._v(" "),
               _c("div", { staticClass: "desc-text ml-4" }, [
                 _vm._v("DESIGN & PRINT")
@@ -575,6 +568,39 @@ var staticRenderFns = [
 render._withStripped = true
 
 
+
+/***/ }),
+
+/***/ "./resources/assets/images/file-icons/design_print.png":
+/*!*************************************************************!*\
+  !*** ./resources/assets/images/file-icons/design_print.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/design_print.png?19100aa619d537a7f1ee93028b8ccd95";
+
+/***/ }),
+
+/***/ "./resources/assets/images/file-icons/gps_track.png":
+/*!**********************************************************!*\
+  !*** ./resources/assets/images/file-icons/gps_track.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/gps_track.png?a5a6ec41d5efb285b825c1b109469b6a";
+
+/***/ }),
+
+/***/ "./resources/assets/images/file-icons/uk_wide.png":
+/*!********************************************************!*\
+  !*** ./resources/assets/images/file-icons/uk_wide.png ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/uk_wide.png?44527869dda828af13bdd911e2f9ddf0";
 
 /***/ }),
 

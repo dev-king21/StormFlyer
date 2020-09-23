@@ -310,7 +310,7 @@ var render = function() {
       _c("app-header"),
       _vm._v(" "),
       _c("div", { staticClass: "w-full" }, [
-        _c("div", { staticClass: "page-subtitle" }, [
+        _c("div", { staticClass: "page-subtitle text-center" }, [
           _vm._v("Earn extra cash in your spare time!")
         ]),
         _vm._v(" "),

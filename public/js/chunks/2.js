@@ -171,7 +171,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -331,7 +330,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "design-item-text" }, [
               _vm._v(
-                "\r\n                    We believe that the single biggest factor in the success of a\r\n                    leaflet's design is the call to action. So, how do you make sure\r\n                    that your call to action is effective? And how do you make sure\r\n                    that your potential customers pay attention to it in the first\r\n                    place? Dull or confusing design and copywriting can be enough\r\n                    to put off even your most ardent fans. After you've done all the\r\n                    hard work of building a great business and organising a leaflet\r\n                    distribution campaign to promote, we think you might as well\r\n                    make sure that final step is taken care of. We want your leaflet\r\n                    to grab people's attention and turn them into customers for you.\r\n                    are up to the same level as the rest of your business.\r\n                    That's why we can make sure that your copywriting and design\r\n                "
+                "\r\n                    We believe that the single biggest factor in the success of a\r\n                    leaflet's design is the call to action. So, how do you make sure\r\n                    that your call to action is effective? And how do you make sure\r\n                    that your potential customers pay attention to it in the first\r\n                    place? Dull or confusing design and copywriting can be enough\r\n                    to put off even your most ardent fans. After you've done all the\r\n                    hard work of building a great business and organising a leaflet\r\n                    distribution campaign to promote, we think you might as well\r\n                    make sure that final step is taken care of. We want your leaflet\r\n                    to grab people's attention and turn them into customers for you.\r\n                    That's why we can make sure that your copywriting and design are up to the same level as the rest of your business.\r\n                "
               )
             ]),
             _vm._v(" "),
